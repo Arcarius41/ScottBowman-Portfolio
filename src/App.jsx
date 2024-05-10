@@ -20,7 +20,7 @@ function App() {
         "This is a super awesome project that does a lot of super awesome things.",
       image: "https://via.placeholder.com/150",
       url: "https://example.com",
-      repo: "https://github.com/example/super-awesome-project",
+      repo: null,
     },
     {
       title: "Best Awesome Project",
@@ -61,7 +61,8 @@ function App() {
           </div>
         </nav>
         <div className="container pt-5 d-flex flex-column gap-3">
-          {projects.map((item, idx) => <PortfolioCard item={item} key={idx} />)}
+          {projects.map((item, idx) => (<PortfolioCard maxWidth="100%" item={item} key={idx} />)
+        )}
         </div>
       </div>
     </>
