@@ -1,27 +1,30 @@
 import { forwardRef } from "react";
 
-const PortfolioButton = ({ title }) => {
+const PortfolioButton = ({ title, onClick }) => {
   return (
     <li class="nav-item">
-      <a class="nav-link" href="#">
+      <a class="nav-link" onClick={onClick}>
         {title}
       </a>
     </li>
   );
 };
 
-const PortfolioCard = forwardRef(function Projects({ item, maxWidth="540px" }, ref) {
+const PortfolioCard = forwardRef(function project(
+  { item, maxWidth = "540px" },
+  ref
+) {
   return (
     <div ref={ref} class="card mb-3" style={{ maxWidth: maxWidth }}>
       <div class="row g-0">
         <div class="col-md-4">
-          <img src={item.image} class="img-fluid rounded-start" alt="..." />
+          <img src={item.image} class="img-fluid rounded" alt="..." />
         </div>
         <div class="col-md-8">
           <div class="card-body">
             <h5 class="card-title">{item.title}</h5>
             <p class="card-text">{item.description}</p>
-            <div class="card-text d-flex flex-row gap-3 justify-content-center">
+            <div class=" d-flex flex-row gap-3 justify-content-center">
               {item.url ? (
                 <a
                   href={item.url}
