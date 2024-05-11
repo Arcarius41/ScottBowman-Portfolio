@@ -7,9 +7,9 @@ import { PortfolioButton, PortfolioCard } from "./components/PortfolioItem";
 function App() {
   const projects = [
     {
-      title: "Super Awesome Project",
+      title: "Serenity Scribe",
       description:
-        "This is a super awesome project that does a lot of super awesome things.",
+      "Serenity Scribe is a digital platform that allows users to record their daily moods and journal entries. It aims to help users track their emotional well-being over time, offering insights and affirmations to encourage positive mental health practices.",
       image: "https://via.placeholder.com/150",
       url: "https://example.com",
       repo: "https://github.com/example/super-awesome-project",
@@ -38,7 +38,7 @@ function App() {
         <nav class="navbar navbar-expand-sm bg-body-tertiary">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              Portfolio
+             Scott B Bowman Dev Portfolio:
             </a>
             <button
               class="navbar-toggler"
@@ -54,7 +54,7 @@ function App() {
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                
-                {projects.map((item, idx) => <PortfolioButton  title={item.title}  />)}
+                {projects.map((item, idx) => <PortfolioButton  title={item.title} key={idx}  />)}
 
               </ul>
             </div>
