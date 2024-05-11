@@ -1,3 +1,5 @@
+import { forwardRef } from "react";
+
 const PortfolioButton = ({ title }) => {
   return (
     <li class="nav-item">
@@ -8,9 +10,9 @@ const PortfolioButton = ({ title }) => {
   );
 };
 
-const PortfolioCard = ({ item, maxWidth="" }) => {
+const PortfolioCard = forwardRef(function Projects({ item, maxWidth="540px" }, ref) {
   return (
-    <div class="card mb-3" style={{ maxWidth: maxWidth }}>
+    <div ref={ref} class="card mb-3" style={{ maxWidth: maxWidth }}>
       <div class="row g-0">
         <div class="col-md-4">
           <img src={item.image} class="img-fluid rounded-start" alt="..." />
@@ -50,6 +52,6 @@ const PortfolioCard = ({ item, maxWidth="" }) => {
       </div>
     </div>
   );
-};
+});
 
 export { PortfolioButton, PortfolioCard };
