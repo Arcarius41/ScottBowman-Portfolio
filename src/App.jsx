@@ -9,28 +9,28 @@ function App() {
       description:
         "Serenity Scribe is a digital platform that allows users to record their daily moods and journal entries. It aims to help users track their emotional well-being over time, offering insights and affirmations to encourage positive mental health practices.",
       image: "dist/assets/SerinityScribeScreenShot.png",
-      url: "https://example.com",
+      url: null,
       repo: "https://github.com/Arcarius41/Albert_Derek_Scott-Mood-Journal",
       ref: useRef(null),
     },
     {
-      title: "Super Awesome Project 2",
+      title: " School Management System",
       description:
-        "This is a super awesome project that does a lot of super awesome things.",
-      image: "https://via.placeholder.com/150",
-      url: "https://example.com",
-      repo: null,
+        "The School Management System is a Java application for managing classrooms, teachers, and students. It features user input handling, object-oriented design, and report generation, demonstrating fundamental programming skills ideal for junior developers and recruiter showcases.",
+      image: "dist/assets/ScreenCropJavaProject-wide.png",
+      url: null,
+      repo: "https://github.com/Arcarius41/Scotts-Java-School-Management-System",
       ref: useRef(null),
     },
-    {
-      title: "Best Awesome Project",
-      description:
-        "This is a super awesome project that does a lot of super awesome things.",
-      image: "https://via.placeholder.com/150",
-      url: "https://example.com",
-      repo: "https://github.com/example/super-awesome-project",
-      ref: useRef(null),
-    },
+    // {
+    //   title: "Best Awesome Project",
+    //   description:
+    //     "This is a super awesome project that does a lot of super awesome things.",
+    //   image: "https://via.placeholder.com/150",
+    //   url: "https://example.com",
+    //   repo: "https://github.com/example/super-awesome-project",
+    //   ref: useRef(null),
+    // },
   ]);
 
   const handleClick = (item) => {
