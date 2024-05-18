@@ -22,15 +22,15 @@ function App() {
       repo: "https://github.com/Arcarius41/Scotts-Java-School-Management-System",
       ref: useRef(null),
     },
-    // {
-    //   title: "Best Awesome Project",
-    //   description:
-    //     "This is a super awesome project that does a lot of super awesome things.",
-    //   image: "https://via.placeholder.com/150",
-    //   url: "https://example.com",
-    //   repo: "https://github.com/example/super-awesome-project",
-    //   ref: useRef(null),
-    // },
+    {
+      title: "Personal Portfolio Project",
+      description:
+        "You are looking at the project in action. Click on the buttons in the navigation bar to scroll to the corresponding project card. This project demonstrates the use of React, Bootstrap, and CSS to create a responsive, single-page portfolio website.",
+      image: "https://via.placeholder.com/150",
+      url: null,
+      repo: "https://github.com/Arcarius41/ScottBowman-Portfolio",
+      ref: useRef(null),
+    },
   ]);
 
   const handleClick = (item) => {
