@@ -26,7 +26,7 @@ function App() {
       title: "Personal Portfolio Project",
       description:
         "You are looking at the project in action. Click on the buttons in the navigation bar to scroll to the corresponding project card. This project demonstrates the use of React, Bootstrap, and CSS to create a responsive, single-page portfolio website.",
-      image: "https://via.placeholder.com/150",
+      image: "dist/assets/HereIsLookingAtU.jpg",
       url: null,
       repo: "https://github.com/Arcarius41/ScottBowman-Portfolio",
       ref: useRef(null),
