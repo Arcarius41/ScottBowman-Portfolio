@@ -43,7 +43,7 @@ function App() {
         <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
           <div class="container-fluid">
             <a class="navbar-brand" onClick={() => window.scroll(0, 0)}>
-              Developer Scott B Bowman's Portfolio:
+              Scott B Bowman's Portfolio:
             </a>
             <button
               class="navbar-toggler"
