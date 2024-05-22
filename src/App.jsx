@@ -8,7 +8,7 @@ function App() {
       title: "Serenity Scribe",
       description:
         "Serenity Scribe is a digital platform that allows users to record their daily moods and journal entries. It aims to help users track their emotional well-being over time, offering insights and affirmations to encourage positive mental health practices.",
-      image: "public/SerinityScribeScreenShot.png",
+      image: "Assets/SerinityScribeScreenShot.png",
       url: null,
       repo: "https://github.com/Arcarius41/Albert_Derek_Scott-Mood-Journal",
       ref: useRef(null),
@@ -17,7 +17,7 @@ function App() {
       title: " School Management System",
       description:
         "The School Management System is a Java application for managing classrooms, teachers, and students. It features user input handling, object-oriented design, and report generation, demonstrating fundamental programming skills ideal for junior developers and recruiter showcases.",
-      image: "public/ScreenCropJavaProject-wide.png",
+      image: "Assets/ScreenCropJavaProject-wide.png",
       url: null,
       repo: "https://github.com/Arcarius41/Scotts-Java-School-Management-System",
       ref: useRef(null),
@@ -26,7 +26,7 @@ function App() {
       title: "Personal Portfolio Project",
       description:
         "You are looking at the project in action. Click on the buttons in the navigation bar to scroll to the corresponding project card. This project demonstrates the use of React, Bootstrap, and CSS to create a responsive, single-page portfolio website.",
-      image: "public/HereIsLookingAtU.jpg",
+      image: "Assets/HereIsLookingAtU.jpg",
       url: null,
       repo: "https://github.com/Arcarius41/ScottBowman-Portfolio",
       ref: useRef(null),
@@ -40,13 +40,13 @@ function App() {
   return (
     <>
       <div className="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" onClick={() => window.scroll(0, 0)}>
+        <nav className="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+          <div className="container-fluid">
+            <a className="navbar-brand" onClick={() => window.scroll(0, 0)}>
               Scott B Bowman's Portfolio:
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -54,10 +54,10 @@ function App() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
                 {projects.current.map((item, idx) => (
                   <PortfolioButton
                     title={item.title}
