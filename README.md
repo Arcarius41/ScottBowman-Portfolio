@@ -1,3 +1,5 @@
-# Create A Portfolio In React
+#Portfolio In React
 
-Template repo for the seminar on Feb. 22, 2024.
+#ALso Implements Bootsrap 5.3 CSS
+
+##Use "run npm dev" to start frontend
